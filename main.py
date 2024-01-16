@@ -32,9 +32,5 @@ if st.button('Predict'):
 
 
     
-    st.write(f"Predicted class: {predicted_class[0]}")
-if predicted_class[0]== 1:
-    print("you will survive")
-else:
-    print("you will not survive")
-       
+    
+st.write(f"Predicted class: {survival_dict.get(predicted_class[0])}")
